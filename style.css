@@ -10,7 +10,7 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
+    /* rm outline none*/
 }
 
 a:hover {
@@ -123,7 +123,6 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -325,7 +324,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 20px; /* change 16px en 20px */
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -476,7 +475,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 35px!important;
 }
 
 .icon-lg {
@@ -516,7 +515,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1; /* change opacity 0 à 1 */
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -642,16 +641,13 @@ a[data-lightbox]:hover img {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p,
 label,
 .btn,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000!important;
 }
 
 .container {
@@ -677,7 +673,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 18px; /* change 11px en 18px*/
 }
 
 .tight-width-whitespace {
@@ -695,7 +691,7 @@ p {
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
-    font-size: 16px;
+    font-size: 20px; /* change 16px en 20px */
     font-weight: 700;
 }
 
@@ -705,12 +701,12 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 25px;/* change 22px en 25px */
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 18px; /* change 15px en 18px */
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -725,11 +721,7 @@ h3 {
 h1 {
     color: #333333!important;
 }
-
-h4 {
-    color: #333333!important;
-}
-
+/* supp h4*/
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -753,8 +745,8 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* change rgba en black transparent */
+    padding: 40px;
 }
 
 .bold-link {
@@ -780,7 +772,7 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -818,11 +810,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.webp"); /* change format photo en webp*/
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp"); /* change format photo en webp*/
 }
 
 @media (max-width: 1024px) {
@@ -897,9 +889,6 @@ h4 {
     h1,
     h2,
     h3,
-    h4,
-    h5,
-    h6,
     p,
     #disqus_thread {
         padding-left: 10px!important;
@@ -1032,6 +1021,12 @@ h4 {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    .navbar-brand img { /* add navbar-brand img */
+        width: 60vw;
+    }
+    h2 {
+        font-size: 16px;
     }
 }
 
